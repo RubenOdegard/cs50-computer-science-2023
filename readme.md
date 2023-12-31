@@ -1,6 +1,8 @@
-# CS50x - Projects for 2023
+## CS50 - Introduction to Computer Science
 
-### [Project Walkthroughs](https://cs50.harvard.edu/x/2023/)
+#### 9 Labs, 10 Problem Sets and 1 Final Project.
+
+#### Harvard EDU: [Project Walkthroughs](https://cs50.harvard.edu/x/2023/)
 
 ---
 
