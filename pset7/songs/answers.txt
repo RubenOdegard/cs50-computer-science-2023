@@ -1,0 +1,33 @@
+--- If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura? ---
+
+First i take a look at the average danceability, energy and valance for the top 100 songs with the following query.
+SELECT AVG(danceability), AVG(energy), AVG(valence) FROM songs;
+
+This returns this table:
++-------------------+-------------+--------------+
+| AVG(danceability) | AVG(energy) | AVG(valence) |
++-------------------+-------------+--------------+
+| 0.71646           | 0.65906     | 0.484443     |
++-------------------+-------------+--------------+
+
+This users average 100 songs has high dancability and relatively high energy, but scoring lower on average valence.
+Scoring lower in valence could indicate that the user likes songs written in minor keys, which has a non-positive feeling throughout.
+
+By analysing the users average scores one could say that this user has a liking for songs that are danceable and with high energy and activity,
+but not stricly songs with positive and uplifting characteristics. Lower score in valence could indiciate a favorisation for music written in minor keys.
+
+
+--- Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. ---
+--- What better ways of calculating this aura would you propose? ---
+
+The reason why this might not be very representative of the listener is because we have very limited factors by which we are creating these "aura´s" from.
+By taking into account only the top 100 songs, which is a very small porsion of the songs the average listener listens too throughout a year, we do not
+get a complete enough sample size for what the listener might be listening too. We also use the average scores of danceability, energy and valence, but we
+should conside other factors as these terms are too vague to go into great detail about a listers actual music taste.
+
+I would propose to deep dive into a combination of tempo, key of the song, genre, duration, artist and artist relations to others and increasing
+the sample size bigger than 100 to get a clearer picture of the listeners pattern of music. Additionally one could look at the songs that have been
+played by the user but skipped within the first 30 seconds and match the relations to the top tracks within the terms mentioned earlier to get a grasp
+of what songs the user actually might not like. It might be individual genres or as simple as liking the first song from a album but not the second one.
+
+The more detailed you go about this algorithm, the more detailed picture of the listeners pattern you will be able to get.

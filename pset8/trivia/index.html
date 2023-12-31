@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            // Multiple choice
+            // Incorrect answer: red button "Incorrect" text beneath question
+            // Correct answer: green button "Correct!" text beneath question
+
+            function mc_checkAnswer(clickedButton) {
+                var buttons = document.querySelectorAll('.mc_btn');
+
+                for (let i = 0; i < buttons.length; i++)
+                    buttons[i].style.backgroundColor = "#d9edff";
+
+
+                // check if correct button is pressed, change colors correspondingly.
+                // trim to remove whitespace for good practice
+                if (clickedButton.textContent.trim() === '1 person per 1 sheep') {
+                    clickedButton.style.backgroundColor = 'green';
+                    document.getElementById('mc_result_text').textContent = 'Correct!';
+                } else {
+                    clickedButton.style.backgroundColor = 'red';
+                    document.getElementById('mc_result_text').textContent = 'Incorrect';
+                }
+            }
+
+            // Free response
+            // Incorrect answer: input field changes to red color, "Incorrect" text beneath question
+            // Correct answer: input field changes to green color, "Correct" text beneath question
+
+            function fr_checkAnswer() {
+                var input = document.querySelector('.fr_input');
+
+                // check if input value is correct, change color of input correspondingly.
+                // trim to remove whitespace for good practice
+                // to lowercase so that the answer is not case-sensitive.
+                if (input.value.trim().toLowerCase() === 'switzerland') {
+                    input.style.backgroundColor = 'green';
+                    document.getElementById('fr_result_text').textContent = 'Correct!';
+                } else {
+                    input.style.backgroundColor = 'red';
+                    document.getElementById('fr_result_text').textContent = 'Incorrect';
+                }
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                <p id="mc_result_text"></p>
+                <button class="mc_btn" onClick="mc_checkAnswer(this)" >6 people per 1 sheep</button>
+                <button class="mc_btn" onClick="mc_checkAnswer(this)" >3 people per 1 sheep</button>
+                <button class="mc_btn" onClick="mc_checkAnswer(this)" >1 person per 1 sheep</button>
+                <button class="mc_btn" onClick="mc_checkAnswer(this)" >1 person per 3 sheep</button>
+                <button class="mc_btn" onClick="mc_checkAnswer(this)" >1 person per 6 sheep</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+                <p id="fr_result_text"></p>
+                    <input type="text" class="fr_input"></input>
+                    <button class="fr_btn" onClick="fr_checkAnswer()">Check Answer</button>
+            </div>
+        </div>
+    </body>
+</html>

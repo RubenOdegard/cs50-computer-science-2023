@@ -1,0 +1,20 @@
+Times:
+
+10 simulations: 0m0.036s (record time using 0m0.000s format)
+100 simulations: 0m0.028s (record time using 0m0.000s format)
+1000 simulations: 0m0.033s (record time using 0m0.000s format)
+10000 simulations: 0m0.124s (record time using 0m0.000s format)
+100000 simulations: 0m0.683s (record time using 0m0.000s format)
+1000000 simulations: 0m6.788s (record time using 0m0.000s format)
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+I thought the simulations would run linearly in terms of speed.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+The predictions seems to be good enough around 10000 simulations.
+When reaching 100000 simulations the compute time is substationally longer than 10000 simulations.

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="initial-scale=1, width=device-width">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <link href="styles.css" rel="stylesheet">
+      <title>Monumental Bouldering</title>
+   </head>
+
+   <body>
+      <header>
+         <nav class="main-nav">
+            <div class="nav-links">
+               <a href="/index.html" class="nav-logo"><b>MB</b></a>
+               <ul class="nav-pages">
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/facilities.html">Facilities</a></li>
+                  <li><a href="/prices.html">Pricing</a></li>
+                  <li><a href="/contact.html" class="selected"><b>Contact</b></a></li>
+               </ul>
+            </div>
+         </nav>
+         <nav class="mobile-nav">
+            <div class="mobile-nav-links">
+               <a href="/" class="mobile-nav-logo">MB</a>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <img src="/burger-icon.png" alt="mobile-nav-dropdown" class="mobile-nav-menu">
+               </a>
+            </div>
+         </nav>
+
+         <div class="mobile-nav-container">
+            <ul id="mobile-nav-links" class="m-nav-links">
+               <li><a href="/index.html" class="selected"><b>Home</b></a></li>
+               <li><a href="/facilities.html">Facilities</a></li>
+               <li><a href="/prices.html">Pricing</a></li>
+               <li><a href="/contact.html" class="selected">Contact</a></li>
+            </ul>
+         </div>
+      </header>
+      <div class="container">
+         <div class="section">
+            <header class="">
+               <h1>Contact us</b></h1>
+            </header>
+            <article>
+               <div class="cta">
+                  <h2>Connect with <b>Monumental Bouldering</b></h2>
+
+               </div>
+               <p>Have questions, feedback, or simply want to learn more about what <b>Monumental Bouldering</b> has to offer? Our dedicated team is here to assist you. Reach out to us through the contact information provided below and discover how you can become a part of our thriving climbing community.</p>
+               <p>Whether you're a first-time visitor or a seasoned climber looking for specific information, our friendly staff is ready to provide the guidance you need. From membership inquiries to event planning, we're committed to ensuring your experience with us is seamless and enjoyable. Connect with us today and let us help you make the most of your indoor bouldering journey.</p>
+               <p>Ready to take the next step? Visit our gym in person, give us a call, or send us an email – whichever way you choose to connect, <b>Monumental Bouldering</b> is excited to hear from you. Join our community, share your passion for climbing, and let us be your partner in the exhilarating world of indoor bouldering.</p>
+               <h4>Email: post@mb.com</h4>
+               <h4>Phone: +47 444 44 444</h4>
+
+            </article>
+         </div>
+      </div>
+      <footer>
+         <p>Monumental Bouldering</p>
+         <p>© 2024 Monumental Bouldering</p>
+      </footer>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("mobile-nav-links");
+           if (x.style.display === "flex") {
+             x.style.display = "none";
+           } else {
+             x.style.display = "flex";
+           }
+         }
+      </script>
+   </body>
+
+</html>

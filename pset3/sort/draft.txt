@@ -1,0 +1,38 @@
+Find out which sorting algorithm is which: sort1/sort2/sort3, bubble sort, merge sort or selection sort.
+
+To run the algorithms use following command: ./[program_name] [text_file.txt]
+In addition, you can use "time" in front of the run command to see running speeds of each algorithm.
+
+Im going to run the program on the text files with the most lines so that the difference between the algo's is greater and easier to spot.
+We have two test cases, unsorted and sorted lists. I will use random50000.txt and sorted50000.txt.
+
+Selection sort
+- worst case: O(n2)
+- best case: Ω(n2)
+
+Bubble sort
+- worst case: O(n2)
+- best case: Ω(n)
+
+Merge sort
+- worst case: O(n log n)
+- best case: Ω(n log n)
+
+----------------------------
+
+TESTING SORT 1
+Unsorted:   0m5.398s
+Sorted:     0m0.263s
+
+TESTING SORT 2
+Unsorted:   0m0.411s
+Sorted:     0m0.243s
+
+TESTING SORT 3
+Unsorted:   0m2.054s
+Sorted:     0m2.108s
+
+-----------------------------
+
+After testing, the fastest algorithm is sort 2. I believe this is merge sort, because its the actual fastest one with (n log n) in both worst and best case scenarios.
+Bubble sort has a variance in the worst and best case scenario, thus making it sort 1. That leaves sort 3 to be selection sort, which has equal worst and bast case scenarios.
