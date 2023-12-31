@@ -4,7 +4,8 @@
 
 ---
 
-**Links redirect to the course pages.**\
+**Links redirect to the course pages.**
+
 The code is placed in their respective folders in this repository, only
 exception is the final project which has it's own repository linked below.
 
