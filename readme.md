@@ -4,6 +4,10 @@
 
 ---
 
+**Links redirect to the course pages.**\
+The code is placed in their respective folders in this repository, only
+exception is the final project which has it's own repository linked below.
+
 **Week 1 (C lang)**
 
 - Lab 1: [Population](https://cs50.harvard.edu/x/2023/labs/1/)
